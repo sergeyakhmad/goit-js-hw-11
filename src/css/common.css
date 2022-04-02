@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1, h2, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+  background-color: #eeefb1;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-form {
+  position: fixed;
+  width: 100%;
+  background-color: #6464ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.button {
+  background-color: #8cc7e0;
+  display: block;
+  padding: 8px;
+margin: 30px auto;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+ .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 50px 0 0 0;
+  margin: 0;
+  list-style: none;
+  max-width: calc(100vw - 80px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .photo-card {
+  height: 450px;
+  overflow: hidden;
+} */
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info p {
+width: 50%;
+}
